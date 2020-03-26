@@ -1,11 +1,12 @@
 
+
+
+
 #include "doctest.h"
 #include "PhoneticFinder.hpp"
 using namespace phonetic;
 #include <string>
 using namespace std;
-
-
 
 TEST_CASE("Test replacement of p, f and b and replacement of y and i") {
     string text = "xxx happy yyy";
@@ -213,5 +214,4 @@ TEST_CASE("Test replacement of letters and lower/upper cases") {
     CHECK(find(text, "Gezzika") == string("Jessica"));
     CHECK(find(text, "Gezziqa") == string("Jessica"));
     CHECK(find(text, "Gezzyka") == string("Jessica"));
-CHECK(find(text, "Gezzyqa") == string("Jessica")); } 
-
+CHECK(find(text, "Gezzyqa") == string("Jessica")); }
