@@ -31,7 +31,7 @@ namespace phonetic{
     }
 	return 0;}
 
-    int itEqual (string textWord,string word){
+    int isitequal (string textWord,string word){
         int lenghtTextWord= textWord.lenght();
         if (lenghtTextWord != word.lenght()){
             return 1;
